@@ -1,4 +1,38 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --purple: #DB00FF;
+  --skin-night: #F1B2CE;
+  --skin-day: #FFC2E6;
+  --white: #FFF1F7;
+  --gray: #353430;
+  --grayish: #32312D66;
+  --pink: #FF8DCB;
+  --red: #FF0070;
+  --darkred: #FF007066;
+  --darkblue: #000028;
+
+  --font-family: 'IBM Plex Mono', monospace;
+  --font-size: 18px;
+  --font-size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-weight-regular: normal;
+  --font-weight-bold: bold;
+  
+  --gap-sides: 10px;
+  --gap-section-title: 10px;
+  --gap-menu: 10px;
+  --gap-content: 30px;
+  --gap-sv: 50px;
+  --gap-sh: 20px;
+
+  --header-shadow: 4px 4px 0 var(--accent-color);
+  --footer-shadow: 2px 2px 0 var(--accent-color);
+
+  --color-text: var(--skin-night);
+  --color-main-title: var(--purple);
+  --color-section-title: var(--red);
+  --color-section-subtitle: var(--darkblue);
+  --accent-color: var(--red);
+  --accent-color-focus: var(--darkred);
+  --color-background: var(--darkblue);
+  --color-header-extras: var(--red);
+  --color-header-hover: var(--darkred);
+}
