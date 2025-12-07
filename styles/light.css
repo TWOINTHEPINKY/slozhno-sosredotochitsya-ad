@@ -9,8 +9,39 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --color-text: var(--gray);
+  --color-main-title: var(--skin-day);
+  --color-section-subtitle: var(--gray);
+  --color-section-title: var(--gray);
+  --accent-color: var(--pink);
+  --accent-color-focus: var(--gray);
+  --color-background: var(--white);
+  --color-header-extras: var(--gray);
+  --color-header-hover: var(--grayish);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .header {
+  background-image: url(../images/cover-image-light.png);
+}
+
+.theme-light .rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: var(--gray);
+    --color-main-title: var(--skin-day);
+    --color-section-subtitle: var(--gray);
+    --color-section-title: var(--gray);
+    --accent-color: var(--pink);
+    --accent-color-focus: var(--gray);
+    --color-background: var(--white);
+    --color-header-extras: var(--gray);
+    --color-header-hover: var(--grayish);
+  }
+
+  .rec {
+    display: none;
+  }
 }
