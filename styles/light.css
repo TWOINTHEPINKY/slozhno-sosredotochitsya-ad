@@ -20,7 +20,7 @@
   --color-header-hover: var(--grayish);
 }
 
-.theme-light .header {
+.theme-light .page {
   background-image: url(../images/cover-image-light.png);
 }
 
