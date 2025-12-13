@@ -3,24 +3,46 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  --color-text: var(--skin-night);
-  --color-main-title: var(--purple);
-  --color-section-title: var(--red);
-  --color-section-subtitle: var(--darkblue);
-  --accent-color: var(--red);
-  --accent-color-focus: var(--darkred);
-  --color-background: var(--darkblue);
-  --color-header-extras: var(--red);
-  --color-header-hover: var(--darkred);
+  --accent-color: rgba(255, 0, 112, 1);
+  --header-text-color: rgba(219, 0, 255, 1);
+  --dark-text-color: rgba(0, 0, 40, 1);
+  --dark-background-color: rgba(255, 0, 112, 1);
+  --header-bg-color: #000028;
+  --paragraph-text: #F1B2CE;
+  --button-color: #ff0070;
+  --main-text-color: #ff0070;
+  --border-color: #ff0070;
+  --for-hover: rgba(255, 0, 112, 0.4);
 }
 
 .theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image: url(../images/cover-image-dark.png);
+  --header-bg-img: url(../images/cover-image-dark.png);
+}
+
+.theme-dark .header__theme-menu-button:hover {
+  --for-hover: rgba(255, 0, 112, 0.4);
+}
+
+.theme-dark .header__theme-menu-button_active {
+  border: 1px solid var(--button-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: rgba(255, 0, 112, 1);
+    --header-text-color: rgba(219, 0, 255, 1);
+    --dark-text-color: rgba(0, 0, 40, 1);
+    --dark-background-color: rgba(255, 0, 112, 1);
+    --header-bg-color: #000028;
+    --paragraph-text: #F1B2CE;
+    --button-color: #ff0070;
+    --main-text-color: #ff0070;
+    --border-color: #ff0070;
+    --for-hover: rgba(255, 0, 112, 0.4);
+  }
+
+  .page {
+    --header-bg-img: url(../images/cover-image-dark.png);
+  }
 }
