@@ -1,38 +1,26 @@
 :root {
-  --purple: #DB00FF;
-  --skin-night: #F1B2CE;
-  --skin-day: #FFC2E6;
-  --white: #FFF1F7;
-  --gray: #353430;
-  --grayish: #32312D66;
-  --pink: #FF8DCB;
-  --red: #FF0070;
-  --darkred: #FF007066;
-  --darkblue: #000028;
+  --accent-color: rgba(255, 0, 112, 1);
+  --header-text-color: rgba(219, 0, 255, 1);
+  --dark-text-color: rgba(0, 0, 40, 1);
+  --dark-background-color: rgba(255, 0, 112, 1);
+  --header-bg-color: #000028;
+  --paragraph-text: #F1B2CE;
+  --button-color: #ff0070;
+  --main-text-color: #ff0070;
+  --border-color: #ff0070;
+  --for-hover: rgba(255, 0, 112, 0.4);
+  
+  --font-regular: 400;
+  --font-bold: 700;
+  --header-bg-img: url(../images/cover-image-dark.png);
 
   --font-family: 'IBM Plex Mono', monospace;
   --font-size: 18px;
-  --font-size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --font-weight-regular: normal;
-  --font-weight-bold: bold;
-  
-  --gap-sides: 10px;
-  --gap-section-title: 10px;
-  --gap-menu: 10px;
-  --gap-content: 30px;
-  --gap-sv: 50px;
-  --gap-sh: 20px;
 
-  --header-shadow: 4px 4px 0 var(--accent-color);
-  --footer-shadow: 2px 2px 0 var(--accent-color);
-
-  --color-text: var(--skin-night);
-  --color-main-title: var(--purple);
-  --color-section-title: var(--red);
-  --color-section-subtitle: var(--darkblue);
-  --accent-color: var(--red);
-  --accent-color-focus: var(--darkred);
-  --color-background: var(--darkblue);
-  --color-header-extras: var(--red);
-  --color-header-hover: var(--darkred);
+  --margin-but-menu: 10px;
+  --section-gap: 50px;
+  --vertical-padding-main: 40px;
+  --horizontal-padding-main: 10px;
+  --main-gap: 10px;
+  --main-padding: 10px;
 }
