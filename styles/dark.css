@@ -1,48 +1,27 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 :root.theme-dark {
-  --accent-color: rgba(255, 0, 112, 1);
-  --header-text-color: rgba(219, 0, 255, 1);
-  --dark-text-color: rgba(0, 0, 40, 1);
-  --dark-background-color: rgba(255, 0, 112, 1);
-  --header-bg-color: #000028;
-  --paragraph-text: #F1B2CE;
+  --main-text-color: #f1b2ce;
+  --bg-color: #000028;
+  --main-header-color: #db00ff;
+  --button-hover-border: #ff007066;
+  --article-header-color: #000028;
   --button-color: #ff0070;
-  --main-text-color: #ff0070;
-  --border-color: #ff0070;
-  --for-hover: rgba(255, 0, 112, 0.4);
-}
-
-.theme-dark .page {
-  --header-bg-img: url(../images/cover-image-dark.png);
-}
-
-.theme-dark .header__theme-menu-button:hover {
-  --for-hover: rgba(255, 0, 112, 0.4);
-}
-
-.theme-dark .header__theme-menu-button_active {
-  border: 1px solid var(--button-color);
+  --section-header-color: #ff0070;
+  --accent-color: #ff0070;
+  --bg-image: url("../images/cover-image-dark.png");
+  --rec-type: block;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-color: rgba(255, 0, 112, 1);
-    --header-text-color: rgba(219, 0, 255, 1);
-    --dark-text-color: rgba(0, 0, 40, 1);
-    --dark-background-color: rgba(255, 0, 112, 1);
-    --header-bg-color: #000028;
-    --paragraph-text: #F1B2CE;
+    --main-text-color: #f1b2ce;
+    --bg-color: #000028;
+    --main-header-color: #db00ff;
+    --button-hover-border: #ff007066;
+    --article-header-color: #000028;
     --button-color: #ff0070;
-    --main-text-color: #ff0070;
-    --border-color: #ff0070;
-    --for-hover: rgba(255, 0, 112, 0.4);
-  }
-
-  .page {
-    --header-bg-img: url(../images/cover-image-dark.png);
+    --section-header-color: #ff0070;
+    --accent-color: #ff0070;
+    --bg-image: url("../images/cover-image-dark.png");
+    --rec-type: block;
   }
 }
